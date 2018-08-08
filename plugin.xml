@@ -60,6 +60,13 @@
         <variable name="FCM_VERSION" value="11.0.1" />
     </plugin>
     <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+          <feature name="CordovaFacebook">
+              <param name="android-package" value="com.blakeisrael.cordova.CordovaFacebook"/>
+              <param name="onload" value="true"/>
+          </feature>
+        </config-file>
         <source-file src="src/android/com/blakeisrael/cordova/CordovaFacebook.java" target-dir="app/src/main/src/com/blakeisrael/cordova/" />
         <framework src="com.facebook.android:facebook-android-sdk:4.3.+" />
     </platform>
