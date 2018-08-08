@@ -56,9 +56,7 @@
         <header-file src="src/ios/CordovaFacebook.h" />
         <source-file src="src/ios/CordovaFacebook.m" />
     </platform>
-    <plugin name="phonegap-plugin-push" spec="~2.1.2">
-        <variable name="FCM_VERSION" value="11.0.1" />
-    </plugin>
+
     <platform name="android">
 
         <config-file target="res/xml/config.xml" parent="/*">
