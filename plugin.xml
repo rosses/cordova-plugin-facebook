@@ -56,11 +56,11 @@
         <header-file src="src/ios/CordovaFacebook.h" />
         <source-file src="src/ios/CordovaFacebook.m" />
     </platform>
-
+    <plugin name="phonegap-plugin-push" spec="~2.1.2">
+        <variable name="FCM_VERSION" value="11.0.1" />
+    </plugin>
     <platform name="android">
-
         <source-file src="src/android/com/blakeisrael/cordova/CordovaFacebook.java" target-dir="app/src/main/src/com/blakeisrael/cordova/" />
-
         <framework src="com.facebook.android:facebook-android-sdk:4.3.+" />
     </platform>
 </plugin>
